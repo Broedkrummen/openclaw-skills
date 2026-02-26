@@ -1,0 +1,13 @@
+#!/bin/bash
+# Overkill Token Optimizer - oktk wrapper script
+# This script provides a convenient wrapper around the oktk CLI
+
+OKTK_BIN="${OKTK_BIN:-/usr/local/bin/oktk}"
+
+if [ ! -f "$OKTK_BIN" ]; then
+    echo "Error: oktk not found at $OKTK_BIN"
+    echo "Install with: npm install -g overkill-token-optimizer"
+    exit 1
+fi
+
+exec "$OKTK_BIN" "$@"

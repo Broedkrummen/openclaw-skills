@@ -1,0 +1,10 @@
+{
+  "name": "overkill-token-optimizer",
+  "version": "1.0.3",
+  "description": "Token optimization for OpenClaw - CLI compression, session management",
+  "author": "Broedkrummen",
+  "runtime": "agent:cody",
+  "required_binaries": ["npm", "oktk"],
+  "tools": [],
+  "channels": []
+}

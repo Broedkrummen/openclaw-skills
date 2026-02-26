@@ -1,0 +1,10 @@
+# Ignore venvs, node_modules, cache, and other build artifacts
+**/venv/
+**/node_modules/
+**/__pycache__/
+**/.git/
+**/.clawhub/
+**/dist/
+**/build/
+**/*.pyc
+**/*.egg-info/
