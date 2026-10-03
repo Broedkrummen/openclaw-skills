@@ -1,0 +1,60 @@
+{
+  "id": "brave-api-search-plugin",
+  "name": "Brave API Search",
+  "version": "1.0.0",
+  "description": "Native OpenClaw tools for Brave Search, Autosuggest, Spellcheck and AI Answers.",
+  "categories": [
+    "web"
+  ],
+  "activation": {
+    "onStartup": false
+  },
+  "contracts": {
+    "tools": [
+      "brave_search",
+      "brave_suggest",
+      "brave_spellcheck",
+      "brave_answers"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "searchApiKey": {
+        "type": "string"
+      },
+      "answersApiKey": {
+        "type": "string"
+      },
+      "suggestApiKey": {
+        "type": "string"
+      },
+      "spellcheckApiKey": {
+        "type": "string"
+      }
+    }
+  },
+  "uiHints": {
+    "searchApiKey": {
+      "label": "searchApiKey",
+      "sensitive": true,
+      "help": "Optional; falls back to BRAVE_SEARCH_API_KEY"
+    },
+    "answersApiKey": {
+      "label": "answersApiKey",
+      "sensitive": true,
+      "help": "Optional; falls back to BRAVE_ANSWERS_API_KEY"
+    },
+    "suggestApiKey": {
+      "label": "suggestApiKey",
+      "sensitive": true,
+      "help": "Optional; falls back to AUTOSUGGEST_API_KEY"
+    },
+    "spellcheckApiKey": {
+      "label": "spellcheckApiKey",
+      "sensitive": true,
+      "help": "Optional; falls back to BRAVE_SPELLCHECK_API_KEY"
+    }
+  }
+}
